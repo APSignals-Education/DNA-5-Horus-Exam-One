@@ -23,6 +23,7 @@ function findOutlier(integers) {
     sum += number;
   });
   if(sum>1) return integers[arr.indexOf(0)];
+  else return integers[arr.indexOf(1)]
 
 }
 
