@@ -8,16 +8,22 @@ function findOutlier(integers) {
   let arr = [];
   for(const num of integers){
     if(Math.abs(num)%2 == 0) {
-      even++;             //even = 1;
       arr.push(0)
     }
     else {
-      odd++;   //odd = 1;
       arr.push(1)
       
     }
 
   }
+  //[0, 1, 1, 1]
+
+  let sum = 0
+  arr.forEach(number => {
+    sum += number;
+  });
+  if(sum>1) return integers[arr.indexOf(0)];
+
 }
 
 
