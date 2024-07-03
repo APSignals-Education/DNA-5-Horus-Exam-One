@@ -3,5 +3,22 @@
 // ![160, 3, 1719, 19, 11, 13, -21] --> 160 (the only even number)
 // in each array exist just *one* odd or even value You should return that value in the function
 function findOutlier(integers) {
-  //your code here
+  let odd = 0;
+  let even = 0;
+  let arr = [];
+  for(const num of integers){
+    if(Math.abs(num)%2 == 0) {
+      even++;             //even = 1;
+      arr.push(0)
+    }
+    else {
+      odd++;   //odd = 1;
+      arr.push(1)
+      
+    }
+
+  }
 }
+
+
+console.log(findOutlier([160, 3, 1719, 19, 11, 13, -21]));

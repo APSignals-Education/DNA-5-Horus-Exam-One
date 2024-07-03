@@ -27,4 +27,14 @@ const data = [
   },
 ];
 
+const titleReturns = (data) =>{
+  const arrOfTitles = {};
+  for(const {title} of data){
+
+    arrOfTitles[title] = title
+  }
+  return Object.keys(arrOfTitles)
+}
+
+console.log(titleReturns(data));
 //* output********  ["AP-signals", "Apple", "Korosh company"];
